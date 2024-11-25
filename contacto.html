@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nuestra Empresa - Constructora Serrano</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        color: white;
+    }
+
+    .header {
+        background-color: black;
+        color: white;
+        text-align: left;
+        padding: 10px 20px;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+    }
+
+    .navbar a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 20px;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+    }
+
+    .social-icons a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        margin: 0 10px;
+    }
+
+    .main-content {
+        text-align: center;
+        padding: 20px;
+        background-image: url('fondolegal.jpg');
+        background-size: cover;
+    }
+
+    .contact-info {
+        text-align: left;
+        padding: 20px;
+    }
+
+    .contact-info h2 {
+        margin-top: 0;
+    }
+
+    .extra-text {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+</style>
+</head>
+<body>
+<div class="header">
+    <h1 style="font-size: 32px;">Constructora Serrano</h1>
+</div>
+
+<div class="navbar">
+    <div>
+        <a href="index.php">Home</a>
+        <a href="empresa.html">Empresa</a>
+        <a href="#ubicacion">Ubicación</a>
+        <a href="contacto.html">Contacto</a>
+    </div>
+</div>
+
+<div class="social-icons">
+    <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+    <a href="https://wa.me/"><i class="fab fa-whatsapp"></i></a>
+</div>
+
+<div id="home" class="main-content">
+    <h1 style="padding: 20px;">Nuestra Empresa - Constructora Serrano</h1>
+
+    <div class="company-info">
+        <!-- Contenido eliminado -->
+    </div>
+</div>
+
+<div id="empresa" class="extra-text">
+    <p>Información relevante sobre nuestra empresa.</p>
+</div>
+
+<div id="ubicacion" class="extra-text">
+    <div class="contact-info">
+        <h2>Ubicación</h2>
+        <p>Dirección: Constructora Serrano, Cochabamba, Bolivia</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d957.7192518315816!2d-66.14427047080654!3d-17.39350641832889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDQ3JzI5LjkiUyA2NsKwNTInMDQuMSJX!5e1!3m2!1ses!2sbo!4v1633040435367!5m2!1ses!2sbo" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</div>
+
+<div id="contacto" class="extra-text">
+    <div class="contact-info">
+        <h2>Contacto</h2>
+        <p>¿Tienes alguna pregunta o deseas ponerte en contacto con nosotros? ¡Estamos aquí para ayudarte! Puedes comunicarte con nuestro equipo de atención al cliente a través de los siguientes medios:</p>
+        <ul>
+            <li>Teléfono: +XX-XXX-XXXXXXX</li>
+            <li>Correo electrónico: info@constructoraserrano.com</li>
+            <li>Visítanos en nuestra oficina en: Dirección de la oficina, Ciudad, País</li>
+        </ul>
+        <p>Estamos disponibles de lunes a viernes de 9:00 a 17:00. ¡Esperamos escucharte pronto!</p>
+    </div>
+</div>
+
+<div class="extra-text">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et ligula et turpis varius congue ac ut libero.</p>
+</div>
+
+<div class="extra-text" style="background-color: black;">
+    <p>Descubre nuestras últimas construcciones y proyectos innovadores para un futuro mejor.</p>
+</div>
+
+<script>
+    document.getElementById('logout').addEventListener('click', function() {
+        var confirmLogout = confirm('¿Estás seguro de que deseas salir?');
+        if (confirmLogout) {
+            // Aquí redirige al usuario a la página de salida (logout.php)
+            window.location.href = 'logout.php';
+        }
+    });
+</script>
+
+</body>
+</html>

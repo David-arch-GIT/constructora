@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nuestra Empresa - Constructora Serrano</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        color: white;
+    }
+
+    .header {
+        background-color: black;
+        color: white;
+        text-align: left;
+        padding: 10px 20px;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+    }
+
+    .navbar a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 20px;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+    }
+
+    .social-icons a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        margin: 0 10px;
+    }
+
+    .main-content {
+        background-image: url('fondolegal.jpg');
+        background-size: cover;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .text-container {
+        background-color: rgba(0, 0, 0, 0.7); /* Fondo negro con 70% de opacidad */
+        color: white;
+        padding: 20px;
+        margin: 20px;
+        display: inline-block;
+    }
+
+    .text-container h1,
+    .text-container h2,
+    .text-container p,
+    .text-container ul {
+        margin: 0;
+        background-color: transparent;
+    }
+
+    .company-info h2 {
+        margin-top: 0;
+    }
+
+    .extra-text {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+</style>
+</head>
+<body>
+<div class="header">
+    <h1 style="font-size: 32px;">Constructora Serrano</h1>
+</div>
+
+<div class="navbar">
+    <div>
+        <a href="#home">Home</a>
+        <a href="#empresa">Empresa</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#" id="logout">Salir</a>
+    </div>
+</div>
+
+<div class="social-icons">
+    <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+    <a href="https://wa.me/"><i class="fab fa-whatsapp"></i></a>
+</div>
+
+<div id="home" class="main-content">
+    <div class="text-container">
+        <h1>Nuestra Empresa - Constructora Serrano</h1>
+        <div class="company-info">
+            <h2>Misión</h2>
+            <p>Nuestra misión es construir hogares de calidad que superen las expectativas de nuestros clientes.</p>
+
+            <h2>Visión</h2>
+            <p>Ser la constructora líder en innovación y sostenibilidad en el sector de la construcción.</p>
+
+            <h2>Valores</h2>
+            <ul>
+                <li>Calidad</li>
+                <li>Integridad</li>
+                <li>Innovación</li>
+                <li>Compromiso</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="empresa" class="extra-text">
+    <p>Información relevante sobre nuestra empresa.</p>
+</div>
+
+<div id="contacto" class="extra-text">
+    <p>Información de contacto.</p>
+</div>
+
+<div class="extra-text">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et ligula et turpis varius congue ac ut libero.</p>
+</div>
+
+<div class="extra-text" style="background-color: black;">
+    <p>Descubre nuestras últimas construcciones y proyectos innovadores para un futuro mejor.</p>
+</div>
+
+<script>
+    document.querySelector('a[href="#home"]').addEventListener('click', function() {
+        window.location.href = 'index.php';
+    });
+
+    document.querySelector('a[href="#empresa"]').addEventListener('click', function() {
+        window.location.href = 'empresa.html';
+    });
+
+    document.querySelector('a[href="#contacto"]').addEventListener('click', function() {
+        window.location.href = 'contacto.html';
+    });
+
+    document.getElementById('logout').addEventListener('click', function() {
+        var confirmLogout = confirm('¿Estás seguro de que deseas salir?');
+        if (confirmLogout) {
+            window.location.href = 'logout.php';
+        }
+    });
+</script>
+
+</body>
+</html>
